@@ -23,5 +23,5 @@ echo "export EDITOR=vi" >> ~/.zshrc
 echo "export DEFAULT_USER=$(whoami)" >> ~/.zshrc;
 
 echo "Complete.";
-# 6. Edit your terminal (I use terminator) such that it uses a powerline font
+# 6. Edit your terminal (I use terminix) such that it uses a powerline font
 #    a. Mine is: Inconsolata for Powerline - Medium - 14
