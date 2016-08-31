@@ -11,3 +11,6 @@ ubuntu_helpful_scripts
 * togglemute - Mute/Unmute.
 * get - Output the current volume percentage.
 * osd - Send a notification to the notify-osd system.
+
+### setup_shell.sh
+> Sets up a linux shell to use zsh, oh-my-zsh, the agnoster theme, powerline fonts, and make the default editor vi.

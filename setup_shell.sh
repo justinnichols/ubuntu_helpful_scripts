@@ -1,7 +1,7 @@
 #!/bin/bash
 
-echo "Installing git, wget, and zsh.";
-sudo apt install -y git wget zsh;
+echo "Installing git, wget, zsh, and vim.";
+sudo apt install -y git wget zsh vim;
 
 echo "Changing shell to zsh.";
 chsh -s `which zsh`;
@@ -23,5 +23,7 @@ echo "export EDITOR=vi" >> ~/.zshrc
 echo "export DEFAULT_USER=$(whoami)" >> ~/.zshrc;
 
 echo "Complete.";
-# 6. Edit your terminal (I use terminix) such that it uses a powerline font
-#    a. Mine is: Inconsolata for Powerline - Medium - 14
+echo "";
+echo "To make the terminal prompt line up perfectly, set your";
+echo "terminal font to Inconsolata for Powerline - Medium - 14.";
+echo "";
