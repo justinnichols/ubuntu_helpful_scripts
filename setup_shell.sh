@@ -15,11 +15,12 @@ echo "Installing Oh-My-Zsh.";
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)";
 
 echo "Setting Oh-My-Zsh Theme.";
-sed -i 's/ZSH_THEME=\".*\"/ZSH_THEME=\"agnoster\"/g' ~/.zshrc;
+git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k ;
+sed -i 's/ZSH_THEME=\".*\"/ZSH_THEME=\"powerlevel9k\/powerlevel9k\"/g' ~/.zshrc ;
 
 echo "Appending other ~/.zshrc options.";
 echo "" >> ~/.zshrc;
-echo "export EDITOR=vi" >> ~/.zshrc
+echo "export EDITOR=vi" >> ~/.zshrc;
 echo "export DEFAULT_USER=$(whoami)" >> ~/.zshrc;
 
 echo "Complete.";
